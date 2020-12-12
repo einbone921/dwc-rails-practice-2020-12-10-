@@ -12,7 +12,7 @@
     <tr>
       <td><%= book.title %></td>
       <td><%= book.body %></td>
-      <th>Show</th>
+      <th><%= link_to "Show", book_path(book) %></th>
       <th>Edit</th>
       <th>Destroy</th>
     </tr>
