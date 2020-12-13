@@ -14,7 +14,7 @@
       <td><%= book.body %></td>
       <th><%= link_to "Show", book_path(book) %></th>
       <th><%= link_to "Edit", edit_book_path(book) %></th>
-      <th><%= link_to "Destroy", book_path(book), method: :delete %></th>
+      <th><%= link_to "Destroy", book_path(book), method: :delete, data: {confirm: "本当に削除しますか？"} %></th>
     </tr>
     <% end %>
   </tbody>
